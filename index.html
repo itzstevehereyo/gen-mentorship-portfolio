@@ -14,10 +14,29 @@
         }
 
         header {
-            background-color: #333; 
+            background-color: #000; /* Changed header background color to black */
             color: #fff;
             text-align: center;
             padding: 20px;
+            position: relative;
+        }
+
+        h1 {
+            color: #fff; 
+            position: relative;
+            z-index: 1;
+        }
+
+        .morse-code {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            z-index: 0;
         }
 
         main {
@@ -26,10 +45,6 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #fff; 
         }
 
         p {
@@ -58,7 +73,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #333;
+            background-color: #000; /* Changed footer background color to black */
             color: #fff;
             position: fixed;
             bottom: 0;
@@ -69,6 +84,7 @@
 <body>
 
     <header>
+        <div class="morse-code">... - . ...- .</div> <!-- Morse code of "STEVE" -->
         <h1>Tag Patrol List</h1>
     </header>
 
